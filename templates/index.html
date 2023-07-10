@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="https://images.openai.com/blob/4c5e6634-d1a4-436f-8e49-135e9ed41ef9/graphics-20230518-084948.png?trim=0,0,0,0&width=2600 " type="image/x-icon">
+    <title>Document</title>
+    <style>
+        .right2{
+            display: none;
+        }
+    </style>
+</head>
+<body class = "bg-gradient-to-r from-teal-300 to-blue-800">
+    <div class ="flex h-[100vh] text-white">
+        <div class ="left bg-blue-950 w-2/12">
+            <button class ="w-[91%]  space-x-4 my-2 hover:bg-slate-800 py-4 px-10  border-white border rounded-md flex mx-4 justify-start items-center">
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                <span >
+                    New chat
+                </span>
+            </button>
+            <div class="chats flex flex-col justify-center items-center">
+                <div class="chat bg-gray-950 cursor-pointer space-x-2 justify-start flex w-[80%] items-center p-4 py-2 rounded-md">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    <span>
+                        I am Jarvis
+                    </span>
+                </div>
+
+                <div class="chat justify-start cursor-pointer space-x-2  flex w-[80%] py-2 items-center p-4 rounded-md">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    <span>
+                        I am Jarvis
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class ="flex-col right1 justify-center items-center flex bg-gradient-to-r from-teal-300 to-blue-800 w-10/12">
+            <div class = "text-center w-full text-4xl font-bold">
+                J . A . R . V . I . S
+            </div>
+            <div class = "itemsrow flex py-3">
+                <div class = "examples flex flex-col justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-15 w-12 pb-2 my-5 hover:animate-ping"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg>
+                    <div class = "items-center justify-center flex flex-col w-[77vh] h-[14vh] rounded-3xl bg-gradient-to-r from-blue-900 to-teal-300 hover:animate-pulse opacity-80 my-10">
+                        <h1 class="hover:animate-pulse pt-2 pb-2 pr-2 text-white font-bold text-xl pl-10">Hey there, I'm J.A.R.V.I.S, your go-to AI companion, ready to enlighten you with information and help you navigate any question or problem.</h1>
+                    </div>
+                </div>
+            </div>
+            <div class=" input w-full text-center my-4">
+                <input class ="rounded-lg w-[70%] h-[5vh]  px-4 font-thin text-xl text-black" type="text" name="text" placeholder="How may I help you?"  id="questionInput">
+                <button id = "sendButton" class ="relative -left-7 hover:animate-pulse">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" class="h-4 w-4" stroke-width="2"><path d="M.5 1.163A1 1 0 0 1 1.97.28l12.868 6.837a1 1 0 0 1 0 1.766L1.969 15.72A1 1 0 0 1 .5 14.836V10.33a1 1 0 0 1 .816-.983L8.5 8 1.316 6.653A1 1 0 0 1 .5 5.67V1.163Z" fill="black"></path></svg>
+                </button>
+            </div>
+            
+        </div>
+        <div class="right2 w-full flex flex-col items-center">
+            <div class="box1 py-7 m-auto space-x-6 flex justify-center  w-[50vw] items-center h-12">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-9 h-9 m-4">
+                    <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+                  </svg>
+                  
+                  <div id = "question">Sup my g</div>
+                
+            </div>
+            <div class="box2 py-7 space-x-6 flex justify-center bg-gradient-to-r from-teal-400 to-blue-900  items-center h-12 w-full">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 m-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                  </svg>
+                  
+                  
+                  <div id = "solution"></div>
+            </div>
+
+            <div class=" input w-full text-center pt-96 my-4  mt-36">
+                <input class ="rounded-lg w-[70%] h-[5vh]  px-4 font-thin text-xl text-black" type="text" name="text" placeholder="How may I help you?"  id="">
+                <button  class ="relative -left-7 hover:animate-pulse">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" class="h-4 w-4" stroke-width="2"><path d="M.5 1.163A1 1 0 0 1 1.97.28l12.868 6.837a1 1 0 0 1 0 1.766L1.969 15.72A1 1 0 0 1 .5 14.836V10.33a1 1 0 0 1 .816-.983L8.5 8 1.316 6.653A1 1 0 0 1 .5 5.67V1.163Z" fill="black"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/script.js"></script>
+    
+    <!-- <script>
+        const x = document.getElementById("solution");
+        
+        function getLocation() {
+          try {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } catch {
+            x.innerHTML = err;
+          }
+        }
+        
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude + 
+          "<br>Longitude: " + position.coords.longitude;
+        }
+        </script> -->
+</body>
+</html>
